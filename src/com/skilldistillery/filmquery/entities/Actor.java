@@ -5,6 +5,9 @@ public class Actor {
 	private String firstName;
 	private String lastName;
 
+	public Actor() {
+	}
+
 	public Actor(int id, String firstName, String lastName) {
 		super();
 		this.id = id;
@@ -12,13 +15,11 @@ public class Actor {
 		this.lastName = lastName;
 	}
 
-//	toString block
 	@Override
 	public String toString() {
 		return "id: " + id + " || firstName: " + firstName + " || lastName: " + lastName + "\n";
 	}
 
-//	getters/setters block
 	public int getId() {
 		return id;
 	}

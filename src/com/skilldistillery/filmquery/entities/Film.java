@@ -8,13 +8,14 @@ public class Film {
 	private String desc;
 	private short releaseYear;
 	private int langId;
+	private String langName;
 	private int rentDur;
 	private double rate;
 	private int length;
 	private double repCost;
 	private String rating;
 	private String features;
-	List<Actor> actorList;
+	private List<Actor> actorList;
 
 	public Film() {
 
@@ -91,6 +92,14 @@ public class Film {
 
 	public void setLangId(int langId) {
 		this.langId = langId;
+	}
+
+	public String getLangName() {
+		return langName;
+	}
+
+	public void setLangName(String langName) {
+		this.langName = langName;
 	}
 
 	public int getRentDur() {
